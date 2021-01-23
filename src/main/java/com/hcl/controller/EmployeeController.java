@@ -34,7 +34,7 @@ public class EmployeeController {
 //		return emp;
 //	}
 
-	@GetMapping("/home")
+	@GetMapping(value={"/home","/"})
 	public ModelAndView getHome() {
 		return new ModelAndView("homepage");
 	}
